@@ -1,0 +1,48 @@
+.sidebarContainer {
+  width: 20vw;
+}
+.newchat-container {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+  background-color: #d7c7f4;
+  padding: 5px;
+  justify-content: center;
+}
+
+.img-container {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  /* make it circular */
+  object-fit: cover; /* crop image */
+  object-position: center;
+  transform: scale(2.5);
+}
+.newchat-container span {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  padding-right: 10px;
+}
+.newchat-btn {
+  display: flex;
+  align-items: center;
+}
+.newchatIcon {
+  font-size: x-large;
+}
+.pastconv-btn {
+  border: none;
+  background-color: #d7c7f4;
+  color: #414146;
+  font-weight: 700;
+}
+.pastconv-btn:hover {
+  background-color: hsl(261, 100%, 84%);
+}

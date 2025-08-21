@@ -1,0 +1,27 @@
+.querypanel-container {
+  display: flex;
+  gap: 20px;
+  min-height: 5vh;
+}
+.ask-btn,
+.save-btn {
+  background-color: #d7c7f4;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.ask-btn:hover,
+.save-btn:hover {
+  background-color: #ac82f8;
+  color: #fff;
+}
+input {
+  border: 1px solid #00000073;
+  flex: 1 1 75%;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+input:focus {
+  outline: none;
+}

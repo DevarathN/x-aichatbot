@@ -1,0 +1,16 @@
+.AppContainer {
+  display: flex;
+  max-height: 100vh;
+}
+.blurred {
+  filter: blur(5px);
+  pointer-events: none;
+}
+.screen-query {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+
+  padding: 20px;
+  background: #d7c7f421;
+}
