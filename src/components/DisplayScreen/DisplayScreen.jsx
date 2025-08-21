@@ -46,21 +46,26 @@ const DisplayScreen = ({ conversation, loading }) => {
           marginBottom: "20px",
         }}
       >
-        <h1>Bot AI</h1>
+        <header>
+          <h1>Bot AI</h1>
+        </header>
         <div>
           {Array.isArray(conversation) && conversation.length > 0 ? (
             selectedRating !== "" ? (
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <strong>Show</strong>
-                <Rating
-                  value={Number(selectedRating)}
-                  style={{ display: "flex", padding: "0 10px" }}
-                />
-                {"  "}
-                <strong>rated conversations</strong>
+              <div>
+                <div>Past Conversations</div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <strong>Show</strong>
+                  <Rating
+                    value={Number(selectedRating)}
+                    style={{ display: "flex", padding: "0 10px" }}
+                  />
+                  {"  "}
+                  <strong>rated conversations</strong>
+                </div>
               </div>
             ) : (
-              <strong>Past Conversations</strong>
+              <div>Past Conversations</div>
             )
           ) : (
             ""
