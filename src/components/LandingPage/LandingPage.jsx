@@ -58,10 +58,9 @@ const LandingPage = () => {
     }
     setActiveConversation((prev) => [...prev, userMessageDetails]);
     setLoading(true);
-    setTimeout(() => {
-      setActiveConversation((prev) => [...prev, AImessageDetails]);
-      setLoading(false);
-    }, 2000);
+
+    setActiveConversation((prev) => [...prev, AImessageDetails]);
+    setLoading(false);
   };
   const handleSave = ({ rating, feedback }) => {
     const savedConvo = {
