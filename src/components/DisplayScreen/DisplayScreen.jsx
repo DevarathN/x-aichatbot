@@ -107,7 +107,7 @@ const DisplayScreen = ({ conversation, loading }) => {
       {Array.isArray(conversation) ? (
         <div className="pastConversations-container">
           {filteredConversations.map((convo, index) => {
-            const messageclass = convo.rating ? "saved-convo" : "active-convo";
+            const messageclass = "saved-convo";
             return (
               <div className={`${messageclass}-container`} key={index}>
                 {convo.messages.map((item, index) => (
