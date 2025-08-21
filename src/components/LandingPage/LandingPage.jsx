@@ -58,13 +58,16 @@ const LandingPage = () => {
     }
     setActiveConversation((prev) => [...prev, userMessageDetails]);
     setLoading(true);
-
-    setActiveConversation((prev) => [...prev, AImessageDetails]);
-    setLoading(false);
+    setTimeout(() => {
+      setActiveConversation((prev) => [...prev, AImessageDetails]);
+      setLoading(false);
+    }, 2000);
   };
-  const handleSave = () => {
+  const handleSave = ({ rating, feedback }) => {
     const savedConvo = {
       messages: [...activeConversation],
+      rating,
+      feedback,
     };
     localStorage.setItem("currentConversation", JSON.stringify(savedConvo));
     setCurrentConversation(savedConvo);
@@ -104,19 +107,19 @@ const LandingPage = () => {
           />
           <QueryInputPanel
             onAsk={handleAsk}
-            onSave={handleSave}
+            onSave={handlePopUp}
             disabled={false}
           />
         </div>
       </div>
-      {/* {openPopup && (
+      {openPopup && (
         <FeedBackPopUp
           onClose={() => {
             setOpenPopUp(false);
           }}
           onSubmit={handleSave}
         />
-      )} */}
+      )}
     </>
   );
 };

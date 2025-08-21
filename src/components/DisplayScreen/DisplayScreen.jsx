@@ -163,7 +163,6 @@ const DisplayScreen = ({ conversation, loading }) => {
                         gap: "5px",
                       }}
                     >
-                      {console.log(convo.rating)}
                       <div>
                         <strong>Rating</strong>:{" "}
                       </div>
