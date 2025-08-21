@@ -23,7 +23,7 @@ const QueryInputPanel = ({
     >
       <input
         type="text"
-        placeholder="Message Bot AI…"
+        placeholder="Message Bot AI..."
         value={messageInput}
         onChange={(e) => {
           setMessageInput(e.target.value);
