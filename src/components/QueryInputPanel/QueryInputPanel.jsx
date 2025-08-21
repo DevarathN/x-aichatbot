@@ -28,9 +28,8 @@ const QueryInputPanel = ({
         onChange={(e) => {
           setMessageInput(e.target.value);
         }}
-        disabled={disabled}
       />
-      <button type="submit" className="ask-btn" disabled={disabled}>
+      <button type="submit" className="ask-btn">
         Ask{" "}
       </button>
       <button
@@ -39,7 +38,6 @@ const QueryInputPanel = ({
         onClick={() => {
           onSave();
         }}
-        disabled={disabled}
       >
         Save
       </button>
