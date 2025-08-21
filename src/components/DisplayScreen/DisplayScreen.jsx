@@ -111,8 +111,8 @@ const DisplayScreen = ({ conversation, loading }) => {
                       <img src={item.avatar} alt="" srcset="" />
                     </div>
                     <div className="text-container">
-                      <span>
-                        <strong>{item.username}</strong>{" "}
+                      <span style={{ fontWeight: "600" }}>
+                        {item.username}{" "}
                       </span>
                       <p>{item.message}</p>
                       <p style={{ color: "#0000009E", fontSize: "small" }}>
@@ -187,9 +187,7 @@ const DisplayScreen = ({ conversation, loading }) => {
                 <img src={item.avatar} alt="" srcset="" />
               </div>
               <div className="text-container">
-                <span>
-                  <strong>{item.username}</strong>{" "}
-                </span>
+                <span style={{ fontWeight: "600" }}>{item.username} </span>
                 <p>{item.message}</p>
                 <p style={{ color: "#0000009E", fontSize: "small" }}>
                   {item.time}
